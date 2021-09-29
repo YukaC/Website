@@ -12,7 +12,7 @@
 			#header {background-color: rgb(54, 54, 54);font-family: 'Oxygen', sans-serif;}
 			ul, ol {list-style:none;}
 			.nav > li {float:left;}
-			.nav li a {background-color:rgb(54, 54, 54);color:rgb(255, 255, 255);text-decoration:none;padding:10px 12px;display:block;}
+			.nav li a {background-color:rgb(54, 54, 54);color:rgb(255, 255, 255);text-decoration:none;padding:10px 12px;display:block; cursor:pointer}
 			.nav li a:hover {background-color:rgb(70, 70, 70);}
 			.nav li ul {display:none;position:absolute;min-width:140px;}
 			.nav li:hover > ul {display:block;}
@@ -54,11 +54,20 @@
                 <div id="header">
                     <ul class="nav">
                         <li><a href="index.html">Inicio</a></li>
-                        <li><a href="">Contacto</a>
-                                <ul>
-                                    <li><a href="">WhatsApp</a></li>
-                                    <li><a href="">Teléfono</a></li>
-                                </ul>
+                        <li><a>Contacto</a>
+                            <ul>
+                                <li><a>WhatsApp</a>
+                                    <ul>
+                                        <li><a style="cursor: text;">291-305-7834</a></li>
+                                    </ul>
+                                </li>
+
+                                <li><a>Teléfono</a>
+                                    <ul>
+                                        <li><a style="cursor: text;">456892</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
                             </li>
                     </ul>
                 </div>
