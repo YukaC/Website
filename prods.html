@@ -4,13 +4,18 @@
 
                 <!-- Declaramos todos y cada uno de los estilos necesarios  -->
     <style>
+        .tftable {font-size:12px;color:rgb(54, 54, 54);height: 1250px;width:100%;border-width: 1px;border-color: rgb(154, 205, 50);border-collapse: collapse;}
+        .tftable th {font-size:20px;background-color: rgb(154, 205, 50);;border-width: 1px;padding: 8px;border-style: solid;border-color: rgb(154, 205, 50);text-align:left;}
+        .tftable tr {background-color: rgb(205, 235, 145);}
+        .tftable td {font-size:24px;border-width: 1px;padding: 8px;border-style: solid;border-color: rgb(154, 205, 50);}
+        .tftable tr:hover {background-color:rgb(255, 255, 255);}
 		
-            body{font-family: 'Oxygen', sans-serif;}
+        body{font-family: 'Oxygen', sans-serif;}
 
-        	*{margin:0px;padding:0px;}
+        	 *{margin:0px;padding:0px;}
 			
 			#header {background-color: rgb(54, 54, 54);font-family: 'Oxygen', sans-serif;}
-			ul, ol {list-style:none;}
+			ul, ol {list-style: none;}
 			.nav > li {float:left;}
 			.nav li a {background-color:rgb(54, 54, 54);color:rgb(255, 255, 255);text-decoration:none;padding:10px 12px;display:block; cursor:pointer}
 			.nav li a:hover {background-color:rgb(70, 70, 70);}
@@ -18,14 +23,6 @@
 			.nav li:hover > ul {display:block;}
 			.nav li ul li {position:relative;}
 			.nav li ul li ul {right:-140px;top:0px;}
-
-
-            .tftable {font-size:12px;color:rgb(54, 54, 54);width:100%;border-width: 1px;border-color: rgb(154, 205, 50);border-collapse: collapse;}
-            .tftable th {font-size:12px;background-color: rgb(154, 205, 50);;border-width: 1px;padding: 8px;border-style: solid;border-color: rgb(154, 205, 50);text-align:left;}
-            .tftable tr {background-color: rgb(205, 235, 145);}
-            .tftable td {font-size:12px;border-width: 1px;padding: 8px;border-style: solid;border-color: rgb(154, 205, 50);}
-            .tftable tr:hover {background-color:rgb(255, 255, 255);}
-
 			
             .images_container{
 
@@ -33,6 +30,8 @@
             margin-top: 5%;
             display: inline-block;
             }
+
+
 
     </style>
                 <!-- Nombre de pestaña, añadido de fuentes para esta pestaña -->
@@ -46,11 +45,11 @@
     </head>
 
 
-    <body>
 
+    <body>
                 <!-- Posicionamiento del header y sus botones de inicio y contacto -->
         <header>
-            <div style="background-color: rgb(54, 54, 54);width: 100%;height: 40px;">
+            <div style="background-color: rgb(54, 54, 54);width: 100%;height: 60px; font-size: 30px;">
                 <div id="header">
                     <ul class="nav">
                         <li><a href="index.html">Inicio</a></li>
@@ -58,7 +57,7 @@
                             <ul>
                                 <li><a>WhatsApp</a>
                                     <ul>
-                                        <li><a style="cursor: text;">291-305-7834</a></li>
+                                        <li><a style="cursor: text;margin-right: -63px;margin-top: 1px;">291-305-7834</a></li>
                                     </ul>
                                 </li>
 
@@ -74,7 +73,7 @@
 
             </div>
         </header>
-        
+
                 <!-- Definición de la tabla de productos -->
 
         <table class="tftable" border="1">
@@ -95,26 +94,27 @@
         <tr><td>Gaseosa</td><td>80 unidades</td><td>100$</td></tr>
         </table>
 
-                <!--  Añadido de espacio de color blanco como separador -->
+                    <!--  Añadido de espacio de color blanco como separador -->
 
-        <div style="background-color: rgb(255, 255, 255);width: auto;height: 100px;">
+        <div style="background-color: rgb(255, 255, 255);width: auto;height: 70px;">
 
         </div>
 
-                <!-- Añadido de espacio de color gris como separador y contenedor de publicidades -->
+                    <!-- Añadido de espacio de color gris como separador y contenedor de publicidades -->
 
-        <div style="background-color: rgb(54, 54, 54);width: auto; height: 300px; ">
-        <button class="images_container" style="border: none; margin-top: 0%;margin-left: 2%;"><a  href="https://www.nescafe.com.ar/"><img src="images/publicidad1.png" style="height: 300px;"></a>
-        <button class="images_container" style="border: none; margin-top: 0;margin-left: 74%;"><a href="https://www.cocacoladeargentina.com.ar/inicio"><img src="images/publicidad2.png" style="height: 300px;"></a></button>                                                                 
+        <div style="background-color: rgb(54, 54, 54); width: auto;height: auto; display: flex; justify-content: space-between; padding-inline: 2%;";
+                                    ">
+        <a href="https://www.nescafe.com.ar/" target="_blank"><img src="images/publicidad1.jpg" style="height: 300px;"></a>
+        <a href="https://www.coca-cola.com.ar/" target="_blank"><img src="images/publicidad2.jpg" style="height: 300px;"></a>                                                              
         </div>
 
-                <!-- Añadimos un pie de pagina con links de referencia  -->
+                    <!-- Añadimos un pie de pagina con links de referencia  -->
 
         <footer style="margin-top: 1%;">
 
             <div >
                 <p><a href="#">Terminos &amp; Condiciones</a> | <a href="#">Politica de Privacidad</a></p>
-                <p>Copyright © 2021 TUP UTN-FRBB, <a href="https://github.com/YukaC">Agustín Ciucani</a> & <a href="https://github.com/Clainux">Candela Grecco</a></p>
+                <p>Copyright © 2021 TUP UTN-FRBB, <a href="https://github.com/YukaC" target="_blank">Agustín Ciucani</a> & <a href="https://github.com/Clainux" target="_blank">Candela Grecco</a></p>
                 </div>
 
         </footer>

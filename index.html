@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+
+<html lang=”es-AR”>
+
+                        <!-- Nombre de pestaña, añadido de fuentes para el proyecto -->
+    <head>
+        <meta charset="utf-8">
+        <title> Proyecto Ecommerce </title>
+        <link rel="shortcut icon" href="images/favicon.png"> 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Jost&display=swap" rel="stylesheet">
+
+    </head>
+
+    <body>
+
+                        <!-- Declaramos todos y cada uno de los estilos necesarios  -->  
+            <style>
+                
+                * {
+                    margin:0px;
+                    padding:0px;
+			    }
+
+                body{
+                    display: grid;
+                    font-family: 'Oxygen', sans-serif;
+                }
+
+                .title_bar {
+                background-color: rgb(154, 205, 50); 
+                text-align: center;
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                }
+
+                .images_container{
+                display: inline-flex;
+                flex-direction: column;
+                padding: 20px;
+                text-align: center;
+                }
+
+                .large {
+                    grid-column: 1 / -1; /* Ocupa todas las columnas disponibles */
+                }
+
+                .header {background-color: rgb(54, 54, 54);font-family: 'Jost', sans-serif;width: 100%;height: 60px; display: inline-flex ;align-items: center; }
+                ul, ol {list-style:none;}
+                .nav > li {float:left;}
+                .nav li a {background-color:rgb(54, 54, 54);color:rgb(255, 255, 255);text-decoration:none;padding:10px 12px;display:block; text-align: center ;width:auto; cursor: pointer;}
+                .nav li a:hover {background-color:rgb(70, 70, 70);color: rgb(154, 205, 50);}
+                .nav li ul {display: none;position:absolute;min-width:140px;}
+                .nav li:hover > ul {display:block;}
+                .nav li ul li {position: relative;}
+                .nav li ul li ul {right:-140px;top:0px;}
+                    
+
+                aside {
+                padding-top: 30%;
+                width: 200px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                background-color: rgb(54, 54, 54);
+                color: rgb(255, 255, 255);
+                position: inherit;
+                }
+
+                #publicidad {
+                    position: absolute;
+                    bottom: 5%;
+                }
+
+                .responsive-img {
+                    max-width: 100%;
+                    height: auto;
+                }
+
+                .cont-combos {
+                    display: grid;
+                    grid-template-columns: repeat(3, minmax(200px,300px));
+                    justify-content: space-between;
+                }
+
+
+                @media (max-width: 1060px) {
+                    .cont-combos{
+                        grid-template-columns: repeat(2, minmax(200px,300px));
+                    }
+                }
+
+                .layout {
+                    width: 100vw;
+                    height: 100vh;
+                    display: grid;
+                    grid:
+                        "header header header" auto
+                        "leftSide body rightSide" 1fr
+                        "footer footer footer" auto
+                        / auto 1fr auto;
+                    }
+
+                    .header { grid-area: header; }
+                    .leftSide { grid-area: leftSide; }
+                    .body { grid-area: body; }
+                    .rightSide { grid-area: rightSide; }
+                    .footer { grid-area: footer; background-color: rgb(54, 54, 54); color: #ffff;}
+                    .footer a { color: #ffff;}
+                    .footer a:hover { color: rgb(154, 205, 50);}
+                    
+
+            </style>
+<section class="layout">
+    <!-- Posicionamos el navbar -->
+        <header class="header">  
+            <div>
+                <ul class="nav">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="prods.html">Catalogo</a></li>
+                    <li>
+                        <a>Contacto</a>
+                        <ul>
+                            <li><a>WhatsApp</a>
+                                <ul>
+                                    <li><a style="cursor: text;">291-305-7834</a></li>
+                                </ul>
+                            </li>
+                            <li><a>Teléfono</a>
+                                <ul>
+                                    <li><a style="cursor: text;">456892</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+        </div>
+    </header>  
+ 
+    
+                        <!-- Añadimos barras laterales, una con los combos mas "comprados"  -->
+
+
+        <aside class="leftSide">
+            <br>
+            <p style="text-align: center;">PROMO MAS VENDIDA QUE NO TE PODES PERDER:</p>
+            <br>
+            <p style="text-align: center;">PROMO 2</p>
+            <br>
+            <img src="images/PROMO2.png" alt="Promo 2" style="width: 10rem; height: auto;">
+            <br>
+            <p style="text-align: center;">PROMO 5</p>
+            <br>
+            <img src="images/PROMO5.png" alt="Promo 5" style="width: 10rem; height: auto;">
+            <br>
+            <a href="https://www.coca-cola.com.ar/" target="_blank" style="width: 10rem; height: auto;"><img src="images/publicidad2.jpg" id="publicidad"  alt="250x250" style="width: 10rem; height: auto;"></a>
+        </aside>
+
+        <aside class="rightSide">
+            <br>
+            <p style="text-align: center;">PROMO MAS VENDIDA QUE NO TE PODES PERDER:</p>
+            <br>
+            <p style="text-align: center;">PROMO 4</p>
+            <br>
+            <img src="images/PROMO4.png"  alt="250x250" style="width: 10rem; height: auto;">
+            <br>
+            <p style="text-align: center;">PROMO 6</p>
+            <br>
+            <img src="images/PROMO6.png"  alt="250x250" style="width: 10rem; height: auto;">
+            <br>
+            <a href="https://www.nescafe.com.ar/" target="_blank" style="width: 10rem; height: auto;"><img src="images/publicidad1.jpg" id="publicidad"  alt="250x250" style="width: 10rem; height: auto;"></a>
+
+        </aside>
+        
+
+        <div class="body cont-combos"> <!-- Desiganmos un tamaño y posición para cada uno de los combos -->
+
+            <div class="large title_bar">  <!-- Nombre de la página y logo -->
+                <img src="images/shop.png" 
+                    alt="Imagen del logo: Escaparate de una tienda"
+                    style="width: 60px;height: auto;">
+                <h1 style="font-size: 40px;">       
+                    Comida rápida Pal'Antojo
+                </h1>
+                <p style="font-size: 24px;"> Tu local online de comidas rápidas </p>
+            </div>
+
+            <div class="images_container">
+
+                <img src="images/PROMO1.png">
+                
+                <h3 style="text-align: center;">
+                <a href="#">PROMO 1 <br> 200$</a>
+                <p style="text-align: center;"> COMBO BASICO </p>
+                </h3>
+                <p style="text-align: center;"> 1 Hamburguesas <br> + 2 Papas Fritas Chicas <br> + 1 Refresco Chico</p>
+                
+            </div>
+
+
+            <div class="images_container">
+
+                <img src="images/PROMO2.png">
+                
+                <h3 style="text-align: center;">
+                <a href="#">PROMO 2 <br> 350$</a>
+                <p style="text-align: center;"> COMBO 2X1 </p>
+                </h3>
+                <p style="text-align: center;"> 2 Hamburguesas Dobles <br>+ 2 Papas Fritas Chicas <br> + 2 Refrescos Grande </p>
+                
+            </div>
+
+
+            <div class="images_container">
+
+                <img src="images/PROMO3.png">
+                
+                <h3 style="text-align: center;">
+                <a href="#">PROMO 3 <br> 280$</a>
+                <p style="text-align: center;"> COMBO BURGER </p>
+                </h3>
+                <p style="text-align: center;"> 2 Hamburguesa <br> + 2 Refresco Mediano <br><br></p>
+                
+            </div>
+
+
+
+            <div class="images_container">
+
+                <img src="images/PROMO4.png">
+                
+                <h3 style="text-align: center;">
+                <a href="#">PROMO 4 <br> 325$</a>
+                <p style="text-align: center;"> COMBO DOBLE </p>
+                </h3>
+                <p style="text-align: center;"> 1 Hamburguesa Doble <br> + 1 Refresco Grande</p>
+                
+            </div>
+
+
+
+            <div class="images_container">
+
+                <img src="images/PROMO5.png">
+                
+                <h3 style="text-align: center;">
+                <a href="#">PROMO 5 <br> 400$</a>
+                <p style="text-align: center;"> COMBO PARA PAREJAS </p>
+                </h3>
+                <p style="text-align: center;"> 2 Porciones Grandes de Nuggets <br> + 2 Refrescos Medianos </p>
+                
+            </div>
+
+
+
+            <div class="images_container">
+
+                <img src="images/PROMO6.png">
+                
+                <h3 style="text-align: center;">
+                <a href="#">PROMO 6 <br> 500$</a>
+                <p style="text-align: center;"> COMBO FAMILIAR </p>
+                </h3>
+                <p style="text-align: center;"> 1 Pizza Grande <br> + 1 Porcion de Nuggets medianos <br> + 1 Refrescos Familiar</p>
+                
+            </div>
+        </div>
+        <footer class="footer">
+
+
+                        <!-- Añadimos un espacio en color gris como contenedor de publicidad -->
+
+        <div style="background-color: rgb(154, 205, 50);width: auto;height: 300px;display: flex;justify-content: center;">
+        <a href="https://www.bimbo.com.ar/" target="_blank"><img src="images/publicidad3.png" style="height: 300px;"></a>                                                                
+        </div>
+
+                        <!-- Añadimos un pie de pagina con links de referencia  -->
+
+        
+
+            <div >
+                <p><a href="#">Terminos &amp; Condiciones</a> | <a href="#">Politica de Privacidad</a> | <a href="#">Contact</a></p>
+                <p>Copyright © 2021 TUP UTN-FRBB, <a href="https://github.com/YukaC" target="_blank">Agustín Ciucani</a> & <a href="https://github.com/Clainux" target="_blank">Candela Grecco</a></p>
+                </div>
+
+        </footer>
+    </section>
+
+
+    </body>
+</html>
